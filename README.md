@@ -1,4 +1,4 @@
-# Crud Employee Spring Boot Spring 
+# Crud Employee Spring Boot Spring
 
 #### Untuk menjalankan :
 `mvn spring-boot:run`
@@ -23,3 +23,6 @@ Form Emlployee
 
 Form Edit Employee
 
+![Dasbord](img/cari.gif "cari")
+
+Cari Employee
