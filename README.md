@@ -1,4 +1,4 @@
-# Crud Employee Spring Boot Spring
+# Crud Employee Spring Boot
 
 #### Untuk menjalankan :
 `mvn spring-boot:run`

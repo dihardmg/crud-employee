@@ -27,9 +27,12 @@
     </properties>
 
     <dependencies>
-      <dependency>
+
+        <!-- If you intend to deploy the app to Heroku -->
+        <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-heroku-connector</artifactId>
+            <version>${VERSION}</version>
         </dependency>
         <dependency>
             <groupId>org.flywaydb</groupId>
