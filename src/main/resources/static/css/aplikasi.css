@@ -1,0 +1,127 @@
+/*
+ * Base structure
+ */
+
+/* Move down content because we have a fixed navbar that is 3.5rem tall */
+body {
+    padding-top: 3.5rem;
+}
+
+/*
+ * Typography
+ */
+
+h1 {
+    margin-bottom: 20px;
+    padding-bottom: 9px;
+    border-bottom: 1px solid #eee;
+}
+
+/*
+ * Sidebar
+ */
+
+.sidebar {
+    position: fixed;
+    top: 51px;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+    border-right: 1px solid #eee;
+}
+
+/* Sidebar navigation */
+.sidebar {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.sidebar .nav {
+    margin-bottom: 20px;
+}
+
+.sidebar .nav-item {
+    width: 100%;
+}
+
+.sidebar .nav-item + .nav-item {
+    margin-left: 0;
+}
+
+.sidebar .nav-link {
+    border-radius: 0;
+}
+
+/*
+ * Dashboard
+ */
+
+/* Placeholders */
+.placeholders {
+    padding-bottom: 3rem;
+}
+
+.placeholder img {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+/* adds the original form-control-feedback class back in and sets it up to be used with icons */
+.form-control-feedback {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    display: block;
+    width: 34px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    pointer-events: none;
+}
+i.form-control-feedback {
+    z-index:100;
+    right:15px;
+}
+
+/* adds colours to the form-control-feedback if being used with is-valid and is-invalid */
+.form-control-feedback.is-valid {
+    color: #28a745 !important;
+}
+.form-control-feedback.is-invalid {
+    color: #dc3545 !important;
+}
+
+/* Removes the default display as none by bootstrap as we want to maintain our own validation */
+.invalid-feedback {
+    display:inherit;
+}
+
+/* allows the is-invalid to be put on the input group div */
+.input-group.is-invalid .input-group-addon {
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #a94442;
+}
+.input-group.is-invalid .input-group-addon, .input-group.is-invalid input {
+    border-color: #dc3545 !important;
+}
+
+/* allows the is-valid to be put on the input group div */
+.input-group.is-valid .input-group-addon {
+    color: #28a745;
+    background-color: #dff0d8;
+    border-color: #28a745;
+}
+.input-group.is-valid .input-group-addon, .input-group.is-valid input {
+    border-color: #28a745 !important;
+}
+
+/* adjusts the top and bottom spacing for multiple error message output */
+.invalid-feedback p {
+    margin-top:5px;
+    margin-bottom:0px;
+}

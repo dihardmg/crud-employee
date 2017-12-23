@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+
+
+<head>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="#" th:href="@{/css/login.css}"/>
+    <title>Log in.</title>
+    <!-- include css in the header -->
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 col-sm-6 col-xs-6 col-md-offset-3">
+            <div id="iosBlurBg">
+                <div id="whiteBg"></div>
+            </div>
+            <div id="bottomEnter"></div>
+            <div id="bottomBlurBg"></div>
+            <!-- Login Form -->
+            <div class="loginForm">
+                <div class="title">
+                    <p>LOG INTO<br><span>SYSTEM</span></p>
+                    <hr>
+                    <hr class="short">
+                </div>
+                <form name="f" th:action="@{/login}" method="post">
+                    <div class="col-3">
+                        <input class="effect-2" type="text" name="username" placeholder="Login...">
+                        <span class="focus-border"></span>
+
+                        <input class="effect-2" type="password" name="password" placeholder="Password...">
+                        <span class="focus-border"></span>
+                    </div>
+
+                    <div class="forget">
+                        <button class="btn btn-default btn-sm" type="submit">Enter..</input>
+
+                    </div>
+
+                </form>
+            </div>
+            <a href="">
+                <div class="enterButton">
+                    <i class="fa fa-lock fa-2x text-white"></i><br>
+                    <span class="enterText text-white">Enter</span>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+</body>
+</html>

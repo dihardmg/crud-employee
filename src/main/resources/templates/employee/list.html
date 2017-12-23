@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout}">
+
+<head>
+    <meta charset="UTF-8"/>
+    <title>List employee</title>
+
+</head>
+<body>
+<section layout:fragment="content">
+
+    <h1>Daftar employee</h1>
+    <div align="right">
+        <form th:action="@{/employee/list}" method="get">
+            <div class="input-group input-group-sm" style="width: 450px;">
+                <input type="text" name="value" class="form-control pull-right" placeholder="Pencarian Berdasarnkan Nama" th:if="${key} == null"/>
+                <input type="text" name="value" class="form-control pull-right" placeholder="Pencarian Berdasarnkan Nama" th:if="${key} != null" th:value="${key}" />
+                <div class="input-group-btn">
+                    <button type="submit" class="btn btn-primary"><i class="fa fa-search"></i>Go...</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <a th:href="@{/employee/form}" class="btn btn-primary">Tambah Data
+    </a>
+
+    <table class="table table-striped">
+        <tr>
+            <th><a class="sorted" sd:pagination-sort="nama">Nama</a></th>
+            <th><a class="sorted" sd:pagination-sort="email">Email</a></th>
+            <th>&nbsp;</th>
+        </tr>
+        <tr th:each="p : ${daftarEmployee}">
+            <td th:text="${p.nama}">otorus</td>
+            <td th:text="${p.email}">otorus@gmail.com</td>
+
+
+            <td>
+                <a href="#" class="btn btn-success" title="Edit employee" th:href="@{/employee/form(id=${p.id})}">
+                    <i class="glyphicon glyphicon-edit"></i> Edit
+                </a>
+                <a href="#" class="btn btn-danger" title="Hapus employee" th:href="@{/employee/hapus(id=${p.id})}">
+                    <i class="glyphicon glyphicon-trash"></i> Delete
+                </a>
+            </td>
+
+
+
+        </tr>
+    </table>
+    <div class="row">
+        <div class="col-sm-6">
+            <div sd:pagination-summary="">info</div>
+        </div>
+        <div class="col-sm-6">
+            <nav class="pull-right">
+                <ul class="pagination" sd:pagination="full">
+                    <!-- Pagination created by SpringDataDialect, this content is just for mockup -->
+                    <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
+                    <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</section>
+</body>
+</html>
