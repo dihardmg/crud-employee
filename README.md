@@ -1,4 +1,4 @@
-# Crud Employee Spring Boot
+# Crud Employee Spring Boot [![Build Status](https://travis-ci.org/dihardmg/crud-employee.svg?branch=master)](https://travis-ci.org/dihardmg/crud-employee)
 
 #### Untuk menjalankan :
 `mvn spring-boot:run`
