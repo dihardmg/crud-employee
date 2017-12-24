@@ -11,7 +11,7 @@ INSERT INTO `s_roles` VALUES
 ('adm','ROLE_ADMIN'),('stf','ROLE_STAFF');
 
 INSERT INTO `s_users` VALUES
-('u001','didik','$2a$10$T0lWqk.pk2guoCxhCqPS9.HHxX6TSIL2559Gk7qNIF0hODKtTXda.',1),('u002','adi','$2a$10$T0lWqk.pk2guoCxhCqPS9.HHxX6TSIL2559Gk7qNIF0hODKtTXda.',1);
+('u001','didik','$2a$10$T0lWqk.pk2guoCxhCqPS9.HHxX6TSIL2559Gk7qNIF0hODKtTXda.',true),('u002','adi','$2a$10$T0lWqk.pk2guoCxhCqPS9.HHxX6TSIL2559Gk7qNIF0hODKtTXda.',true);
 
 INSERT INTO `s_user_role` VALUES
 ('u001','adm'),('u001','stf'),('u002','stf');

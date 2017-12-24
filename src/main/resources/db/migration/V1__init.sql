@@ -8,7 +8,7 @@ CREATE TABLE s_users(
   id VARCHAR (40) PRIMARY KEY,
   username VARCHAR (40) NOT NULL,
   password VARCHAR (100) NOT NULL,
-  active tinyint(1) DEFAULT NULL
+  active boolean NOT NULL
 );
 
 CREATE TABLE s_roles(
