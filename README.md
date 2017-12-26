@@ -17,9 +17,9 @@ Daftar Emlployee
 
 ![Dasbord](img/form.png "Form Emlployee")
 
-Form Emlployee
+page 404
 
-![Dasbord](img/formEdit-valid.png "Form EditEmlployee")
+![Dasbord](img/404.png "Form EditEmlployee")
 
 Form Edit Employee
 
