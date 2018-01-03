@@ -5,6 +5,10 @@
 
 Access `http://localhost:8080`
 
+Demo heroku : https://crud-employee.herokuapp.com/
+username :didik
+passwd  : 123
+
 Login Home
 
 ![Login Home](img/login.png "Login Home Page")
