@@ -3,13 +3,8 @@
 #### Untuk menjalankan :
 `mvn spring-boot:run`
 
-Access `http://localhost:8080`
+Access `http://localhost:8080/login`
 
-Demo heroku : `https://crud-employee.herokuapp.com/`
-
-  username : `didik`
-
-  passwd  : `123`
 
 Login Home
 
