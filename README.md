@@ -23,10 +23,6 @@ Daftar Emlployee
 
 ![Dasbord](img/form.png "Form Emlployee")
 
-page 404
-
-![Dasbord](img/404.png "Form EditEmlployee")
-
 Form Edit Employee
 
 ![Dasbord](img/cari.gif "cari")
