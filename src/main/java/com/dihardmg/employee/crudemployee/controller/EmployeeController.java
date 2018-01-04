@@ -53,7 +53,7 @@ public class EmployeeController {
     @PostMapping("/form")
     public String simpan(@ModelAttribute @Valid Employee employee, BindingResult errors, SessionStatus status){
         if (errors.hasErrors()){
-            return "/employee/form";
+            return "employee/form";
         }
         employeeDao.save(employee);
         status.setComplete();
