@@ -1,4 +1,4 @@
-# Crud Employee Spring Boot [![Build Status](https://travis-ci.org/dihardmg/crud-employee.svg?branch=master)](https://travis-ci.org/dihardmg/crud-employee)
+# Crud Employee Spring Boot [![Build Status](https://travis-ci.org/dihardmg/crud-employee.svg?branch=master)](https://travis-ci.org/dihardmg/crud-employee) [![Heroku](http://heroku-badge.herokuapp.com/?app=heroku-badge&root=crud-employee.html)]
 
 #### Untuk menjalankan :
 `mvn spring-boot:run`
