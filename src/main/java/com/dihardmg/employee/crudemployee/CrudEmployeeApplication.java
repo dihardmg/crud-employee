@@ -16,8 +16,5 @@ public class CrudEmployeeApplication {
 	public SpringDataDialect springDataDialect() {
 		return new SpringDataDialect();
 	}
-	@Bean
-	public LayoutDialect layoutDialect() {
-		return new LayoutDialect();
-	}
+	
 }
