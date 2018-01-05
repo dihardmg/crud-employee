@@ -1,0 +1,17 @@
+language: java
+sudo: false
+jdk:
+- oraclejdk8
+services:
+- mysql
+before_install:
+- mysql -uroot -e "grant all on belajar.* to belajaruser@localhost identified by 'belajarpasswd'"
+- mysql -uroot -e "drop database if exists belajar"
+- mysql -uroot -e "create database belajar"
+deploy:
+  provider: heroku
+  api_key:
+    secure: RanY4Bzmfi5RiM30z9pQ3wQHmcpZ9KbBrLWtr1jaLNScR33a7LCvndtMubpW1Sxj6o6Ujhk2ijuf8PMmT/DljLILfQ7Y2QwJczE7T8JvEQFdpSz8CTo3+4obCkkseh6+qey6RmndTzBb5e8j+MG1jLGyf9RiBwRPJ/EtfHdAZ/B/jRcIk7HkyfuuEzh1xeQUQRkjH4oFIfVhh95var9SOyybW3fCdkDE3N1bKcKwPLrQThWSaAfbhxcbMkVlPu6pzP17ryUkxxwqL79JPlurnNUYAiP3eoauOopDAgdgJwr39gIznQt6wRLt2JflMEQVQ8X55/B0wJcR4WGnVgbkocNvDfJ+1QjieJQ0sxc9mYd3yzQLTvrnfLNumQiJ5upMiilMWxUo2x5q/eTup0lLau6whA621H8mibP5wMSdoOZ1GnwuSe4bwGfliW66VUydEbQh81yl1Na9H27cL4QbHA0XnMk6+EwdD121UTIEZ9s7Dx6dynJt6hdzXOPU8T7rc2C4ddru6+Kwp58fnj2+GZUGO5rkgFaQoo5Y++XeByr1tL7dHM4wjfKWVDJRSwzDzDu1aqsBJ09X1ibQwqCmMxuR1SChciDtQCXqpbRJZWFjItahMxnxEu+/JggGs7PcTTQJavnFF77wUm0HCdi6ejSllgBXdKZ+aR3jGGFTclo=
+  app: crud-employee
+  on:
+    repo: dihardmg/crud-employee
