@@ -1,14 +1,13 @@
 # Crud Employee Spring Boot [![Build Status](https://travis-ci.org/dihardmg/crud-employee.svg?branch=master)](https://travis-ci.org/dihardmg/crud-employee) [![Heroku](http://heroku-badge.herokuapp.com/?app=heroku-badge&root=crud-employee.html)]
 
-#### Untuk menjalankan :
-`mvn spring-boot:run`
+#### Untuk menjalankan : `mvn spring-boot:run`
 
- - Access Local: `http://localhost:8080/login`
+Access Local: `http://localhost:8080/login`
 
 
-    Demo Heroku : https://crud-employee.herokuapp.com/
-    Username: didik
-    passwwd: 123
+ - Demo Heroku : https://crud-employee.herokuapp.com/
+ - Username: didik
+ - passwwd: 123
     
 
 
