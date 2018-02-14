@@ -32,5 +32,4 @@ public class Employee {
     @NotEmpty
     private String email;
 
-
 }
